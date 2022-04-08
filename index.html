@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Ensures proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Forces IE 8/9/10 to use its latest rendering engine -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Pixel Art Maker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container title">
+    <h1>Pixel Art Maker</h1>
+    <br />
+    <p style="text-align: center">
+      Welcome to Pixel Art Maker, please enter your preferred Grid Size
+      <i class="fa fa-th-large" aria-hidden="true"></i>
+      (Max 50 x 50).
+    </p>
+  </div>
+  <div class="container">
+    <form class="size-picker">
+      <div class="row">
+        <div class="form-field">
+          <div class="form-field__control">
+            <label for="height" class="form-field__label">H</label>
+            <input type="number" id="height" class="form-field__input input-height" />
+          </div>
+        </div>
+        <div class="form-field">
+          <div class="form-field__control">
+            <label for="width" class="form-field__label">W</label>
+            <input type="number" id="width" class="form-field__input input-width" />
+          </div>
+        </div>
+        <button type="button" class="submit-button btn" value="submit">
+          <span>Create Grid</span>
+        </button>
+      </div>
+      <p class="hidden">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Please
+        enter a number from 1 ~ 50.
+      </p>
+    </form>
+
+    <div class="row">
+      <h4>
+        <i class="fa fa-pencil-square" aria-hidden="true"></i> Pen Color
+      </h4>
+      <input type="color" class="color-picker" id="color1" value="#3552c1" />
+
+      <button type="button" class="draw-mode btn">
+        <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Draw</span>
+        <button type="button" class="quick-fill btn">
+          <span><i class="fa fa-th-large" aria-hidden="true"></i> Fill</span>
+        </button>
+      </button>
+      <button type="button" class="erase-mode btn">
+        <span><i class="fa fa-eraser" aria-hidden="true"></i> Erase</span>
+      </button>
+      <button type="button" class="reset btn">
+        <span><i class="fa fa-refresh" aria-hidden="true"></i> Reset </span>
+      </button>
+    </div>
+  </div>
+  <table class="pixel-canvas"></table>
+  <p style="text-align: center; font-size: 12px">
+    Nicholas Roque | Udacity - Accenture Intro to Programming 2022</a>
+  </p>
+  <script src="design.js"></script>
+</body>
+
+</html>
