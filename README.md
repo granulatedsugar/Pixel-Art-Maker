@@ -1,6 +1,8 @@
 # Pixel-Art-Maker
 <h2>Final Project for Accenture Udacity Scholarship</h2>
 
+<img src="https://user-images.githubusercontent.com/48410720/162525700-d8a54a46-cef6-453c-bfcf-b5944bef7d0e.png" alt="app img" />
+<img src="https://i.imgur.com/5VgSJJp.png" alt="logs" />
 
 <a href="https://review.udacity.com/#!/rubrics/1029/view" alt="project specs">Project Specification Requirements</a>
 
